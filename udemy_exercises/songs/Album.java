@@ -1,4 +1,4 @@
-package songs;
+package udemy_exercises.songs;
 
 import java.util.*;
 

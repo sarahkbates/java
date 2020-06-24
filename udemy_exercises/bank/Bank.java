@@ -1,4 +1,4 @@
-package bank;
+package udemy_exercises.bank;
 
 import java.util.ArrayList;
 

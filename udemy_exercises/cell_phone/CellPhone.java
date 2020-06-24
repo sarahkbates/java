@@ -1,4 +1,4 @@
-package cell_phone;
+package udemy_exercises.cell_phone;
 
 import java.util.ArrayList;
 import java.util.Scanner;
