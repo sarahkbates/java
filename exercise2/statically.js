@@ -1,9 +1,9 @@
 class Statically {
     //fix this code, so all of the instantiation and console.logs() work.  Try not to change the signature of the class, unless absolutely necessary.
-    static #glue = "Epoxy";
+    static glue = "Epoxy";
     jello = "Jello";
 
-    moveAndShake() {
+    static moveAndShake() {
         console.log("Never stagnate in life.  Be agile, change, and improve...");
     }
 
@@ -13,9 +13,10 @@ class Statically {
     }
 
     static explain() {
-        stubborn();
-        console.log(#glue);
+        Statically.stubborn();
+        console.log(Statically.glue);
         //write an explanation for how the keyword static behaves differently in javascript vs. java.
+        console.log("They both operate in the class instead of the instance, which is why the method needed to change the methods to call Statically for them to work. Static classes return an instance in both JS and Java.")
     }
 
 }
@@ -24,11 +25,11 @@ class Statically {
 
 const stats = new Statically();
 
-stats.moveAndShake();
-stubborn();
-stats.explain();
+Statically.moveAndShake();
+Statically.stubborn();
+Statically.explain();
 
-console.log(stats.#glue);
+console.log(Statically.glue);
 console.log(stats.jello);
 
 //Once you have finished getting statistically.js to run, refactor the code here in Java.
